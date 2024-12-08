@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Networking Basics</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="This is a website about networking and common protocols">
+		<meta name="keywords" content="Networking, VPN, TCP/IP, OSI Model, HTTP, SSH, FTP">
+		<meta name="author" content="Hunter Cartier">
+		<link rel="stylesheet" href="CartierHunterStyleSheet.css">
+	</head>
+	<body>
+		<ul class="menu" >
+			<li class="menu active"><a href="CartierHunterHomePage.html">Home</a></li>
+			<li class="menu"><a href="table.html">Networking Table</a></li>
+			<li style="float:right" class="menu"><a href="About.html">About Me</a></li>
+			<li class="menu"><a href="form.html">Questionnaire</a></li>
+		</ul> 
+		<h1 onmouseover="style.color='red'" onmouseout="style.color='midnightblue'">The Basics of Networking</h1>
+		<hr>
+		<h2>Welcome Video</h2>
+		<p>Take a look at Linux Mint on bare metal and a simple python http server to host a webpage.</p>
+		<video width="1000" height="800" controls>
+			<source src="WelcomeVideo.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video><br>
+		<img class="center" src="desktop.jpeg" alt="Linux Desktop" style="width:1000px;height:600px;"><br><br>
+		<button type="button"
+		onclick="document.getElementById('dateandtime').innerHTML = Date()">
+		Click here to display Date and Time.</button>
+		<p id="dateandtime"></p>
+		<div onmouseover="linux(this)" onmouseout="windows(this)" 
+		style="background-color:lightblue;width:120px;height:20px;padding:40px;">
+		Secret Message Here</div>
+
+		<script>
+		function linux(obj) {
+  		obj.innerHTML = "GNU/Linux IS"
+		}
+
+		function windows(obj) {
+  		obj.innerHTML = "BETTER THAN WINDOWS"
+		}
+		</script>
+		<hr>
+		<h2>What is Networking</h2>
+		<a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank">
+			<img class="center" src="networking1.jpeg" alt="Server Rack" style="width:400px;height:300px;">
+		</a>
+		<p>What is networking in the first place? No, we are not talking about social networking, but <span class="boldtext">computer networking.</span> Networking refers to how computers and other devices share information and resources. When you browse the internet, send an email, or download a file, networking is what enables you to do so seamlessly from device to device. Most of us just use computers and browse the web without putting much thought into it, but a lot happens behind the scenes for computers to share and recieve information. You can download a tool called, "WireShark" and see how overwhelming the information can be that passes through a network. Wireshark is a packet analyzer that shows all the different networking protocols going to and from the device it is hosted on. In small or enterprise systems, networking is important in today's world of computing.<br>
+		<br>
+		<a href="https://www.ibm.com/topics/networking" target="_blank">IBM: What is Computer Networking</a>
+		</p>
+		<hr>
+		<h2>Different Types of Networks</h2>
+		<img class="center" src="networking2.jpeg" alt="Macbooks Networking" style="width:400px;height:300px;">
+		<p>There are various types of networks big and small, and each serves a different purpose. A Local Area Network (LAN) connects devices in a small area, such as a home or office. This includes all of the devices that you have at home. These devices can go through the router to reach out and connect to external services. A Metropolitan Area Network (MAN) covers larger areas such as a metropolitan area. A Wide Area Network (WAN) refers to the internet itself everywhere. Personal Area Networks (PAN) are among the smallest and most connect devices for a single person. An example of a PAN would be your smartwatch and smartphone.</p>
+		<hr>
+		<h2>Network Protocols and Their Importance</h2>
+		<img class="center" src="networking3.jpeg" alt="Router" style="width:400px;height:300px;">
+		<p>Networking and its protocols are the <span class="italictext">rules and standards</span> that enable devices on a network to communicate with each other. Common protocols you may be familiar with include HTTP, TCP/IP, FTP, DNS, and HTTPS. These protocols transfer data, help you browse the web, reach a website's IP address, and facilitate file sharing, ensuring that your data is transmitted to the specified destination. Each protocol plays a role in transmitting data through the TCP/IP stack. One protocol often called the “phonebook of the internet” is the Domain Name System (DNS). When you type a domain name into your browser, such as example.com, your computer doesn’t recognize the name directly. DNS translates this human-readable name into an IP address. This is how DNS works at a high level, though of course, this is a simplified version. It's similar to looking up your mom's number in your contacts; the phone doesn’t call “Mom,” but rather dials the cell phone number that you may not have memorized.<br>
+		<br>
+		<a href="https://www.pcmag.com/how-to/what-is-dns-how-it-works-domain-name-system" target="_blank">PCMAG: What is DNS</a>
+		</p>
+		<hr>
+		<h2>What is the TCP/IP Stack?</h2>
+		<p>The TCP/IP stack (Transmission Control Protocol/Internet Protocol) is a set of communication protocols essential for data transmission across networks. It consists of four layers: <span class="boldtext italictext">the Application Layer, Transport Layer, Internet Layer, and Network Access Layer.</span> Networking protocols operate at each layer. At the Application Layer, protocols like HTTP (web browsing), FTP (file transfers), and SMTP (email) enable communication between applications. The Transport Layer includes TCP (Transmission Control Protocol) and UDP (User Datagram Protocol), which handle end-to-end communication of data. The Internet Layer hosts the Internet Protocol (IP), which manages routing and moves data between devices across networks to the correct IP address. The Network Access Layer, the lowest layer, manages the physical transmission of data over hardware like switches and cables. TCP/IP serves as the backbone of the internet. Understanding the different layers and their protocols can help you see how data moves through networks and troubleshoot issues that may arise.<br>
+		<br>
+		<a href="https://www.professormesser.com/network-plus/n10-009/n10-009-video/n10-009-training-course/" target="_blank">Professor Messer’s CompTIA Network+ Training</a>
+		</p>
+		<h3>TCP/IP Stack</h3>
+		<ol>
+			<li>Application Layer</li>
+			<li>Transport Layer</li>
+			<li>Internet Layer</li>
+			<li>Network Access Layer</li>
+		</ol>
+		<hr>
+	</body>
+</html>
